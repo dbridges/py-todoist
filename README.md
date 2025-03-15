@@ -3,5 +3,5 @@
 Install with:
 
 ```
-uv tool
+uv tool install --from git+https://github.com/dbridges/py-todoist py-todoist
 ```
