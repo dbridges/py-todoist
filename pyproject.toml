@@ -1,0 +1,16 @@
+[project]
+name = "py-todoist"
+version = "0.1.0"
+description = "A simple todo board"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "textual>=2.1.2",
+]
+
+[project.scripts]
+todo = "todo:main"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"

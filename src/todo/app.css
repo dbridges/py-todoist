@@ -1,0 +1,98 @@
+Screen {
+  background: #bfa077;
+  layout: horizontal;
+  padding: 1 2;
+}
+
+Column {
+  margin-right: 2;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  & > .content {
+    scrollbar-size-vertical: 0;
+  }
+
+  & > .header {
+    text-style: bold;
+    color: #7a654b;
+    text-align: center;
+    margin-bottom: 1;
+
+    &.selected {
+      text-style: underline bold;
+    }
+  }
+}
+
+Card {
+  background: white;
+  border-bottom: tall #9c815f;
+  color: #444444;
+  margin-bottom: 1;
+  height: auto;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  & > .header {
+    text-align: center;
+    color: #cf3311;
+    border-bottom: solid #d1ecff;
+  }
+
+  & > .content {
+    padding: 0 2;
+  }
+
+  &.selected {
+    background: #fffed3;
+  }
+}
+
+ModalScreen {
+  align: center middle;
+
+  .header {
+    text-align: center;
+    color: #cf3311;
+    border-bottom: solid #d1ecff;
+  }
+
+  .content {
+    padding: 1 2;
+    height: 1fr;
+  }
+
+  TextArea {
+    height: 1fr;
+    border: none;
+  }
+
+  Horizontal {
+    height: auto;
+  }
+
+  Button {
+    border: round #62bcfc;
+    color: #62bcfc;
+
+    &:focus {
+      color: #62bcfc;
+      background: #ffffff;
+      text-style: underline bold;
+      background-tint: white 0%;
+    }
+  }
+}
+
+.modal-content {
+  background: white;
+}
+
+.spacer {
+  width: 1fr;
+}
